@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 拷贝代码
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 设置python环境
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.12'
 
       - name: 安装依赖包
         run: |
